@@ -17,3 +17,9 @@ class TopUSHotels::CLI
     hotel = TopUSHotels::Hotel.find(input.to_i)
 
     print_hotel(hotel)
+
+    puts "Would you like to see more hotels? (y or n)"
+
+    input = gets.strip.upcase
+
+    
