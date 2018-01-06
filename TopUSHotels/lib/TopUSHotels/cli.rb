@@ -21,5 +21,6 @@ class TopUSHotels::CLI
     puts "Would you like to see more hotels? (y or n)"
 
     input = gets.strip.upcase
-
-    
+      if input == "Y"
+        start
+      else
