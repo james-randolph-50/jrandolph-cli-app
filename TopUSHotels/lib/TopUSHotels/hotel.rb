@@ -18,4 +18,21 @@ class TopUSHotels::Hotel
   def self.find(id)
     self.all[id-1]
   end
+
+  def name
+    @name ||=
+  end
+
+  def rank
+    @rank ||=
+  end
+
+  def location
+    @location ||=
+  end
+
+  def description
+    @description ||=
+  end
+
 end
