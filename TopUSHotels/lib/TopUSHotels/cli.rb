@@ -24,3 +24,15 @@ class TopUSHotels::CLI
       if input == "Y"
         start
       else
+        put "Enjoy your stay!"
+        stop
+      end
+    end
+
+    def print_hotel(hotel)
+      puts "#{hotel.name} | ##{hotel.rank}"
+      puts "-----"
+      puts "Where to find it: #{hotel.location}"
+      puts "-----"
+      puts "About the hotel: #{hotel.description}"
+    end
