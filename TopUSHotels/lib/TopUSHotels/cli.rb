@@ -36,3 +36,13 @@ class TopUSHotels::CLI
       puts "-----"
       puts "About the hotel: #{hotel.description}"
     end
+
+    def print_hotels(from_number)
+      puts "Hotel #{from_number} - #{from_number+4}"
+
+      TopUSHotels::Hotel.all[from_number-1, 5].each.with_index(from_number) {|hotel, index|
+      puts "#{index}. #{hotel.name} - #{hotel.rank}"
+    }
+  end
+
+end
