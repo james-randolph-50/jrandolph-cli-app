@@ -20,7 +20,7 @@ class TopUSHotels::Hotel
   end
 
   def name
-    @name ||=
+    @name ||= doc.xpath("")
   end
 
   def rank
