@@ -14,3 +14,6 @@ class TopUSHotels::CLI
 
     puts "Which hotel would you like to learn more about?"
     input = gets.strip
+    hotel = TopUSHotels::Hotel.find(input.to_i)
+
+    print_hotel(hotel)
