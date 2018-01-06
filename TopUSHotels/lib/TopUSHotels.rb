@@ -1,5 +1,6 @@
 require "TopUSHotels/version"
 
 module TopUSHotels
-  # Your code goes here...
+
 end
+require_relative '../config/environment'

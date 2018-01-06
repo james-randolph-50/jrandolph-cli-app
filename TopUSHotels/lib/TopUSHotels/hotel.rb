@@ -20,15 +20,15 @@ class TopUSHotels::Hotel
   end
 
   def name
-    @name ||= doc.xpath("")
+    @name ||= doc.search("a.ellipsis-text search-results-link").text
   end
 
   def rank
-    @rank ||=
+    @rank ||= doc.search(".block-tight search-results-ranking-heading").text
   end
 
   def location
-    @location ||=
+    @location ||= doc.search(".block-tight text-small").text
   end
 
   def description
