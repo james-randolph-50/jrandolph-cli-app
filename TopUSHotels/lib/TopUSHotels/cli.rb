@@ -8,4 +8,9 @@ class TopUSHotels::CLI
 
   def start
     puts "Select a group of hotels: 1-5, 6-10, 11-15"
-    input = get_strip.to_i
+    input = gets.strip.to_i
+
+    print_hotels(input)
+
+    puts "Which hotel would you like to learn more about?"
+    input = gets.strip
