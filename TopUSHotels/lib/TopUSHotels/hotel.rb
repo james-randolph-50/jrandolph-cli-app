@@ -32,7 +32,7 @@ class TopUSHotels::Hotel
   end
 
   def description
-    @description ||=
+    @description ||= doc.search(".description text-small pad-right-normal-for-small-only ellipsis-block-custom")
   end
 
 end
